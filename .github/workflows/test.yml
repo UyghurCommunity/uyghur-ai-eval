@@ -14,4 +14,5 @@ jobs:
         with:
           node-version: '22'
       - run: npm test
+      - run: node --check web/app.js && node --check web/motion.js
       - run: npm pack --dry-run --ignore-scripts

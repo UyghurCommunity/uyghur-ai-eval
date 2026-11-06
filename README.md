@@ -137,6 +137,8 @@ Serve over HTTP rather than opening `index.html` as a `file://` URL, since brows
 
 Uyghur interface text and Uyghur answers use **ALKATIP Basma**, loaded from external WOFF2/WOFF/TTF URLs at `db.onlinewebfonts.com`, with system font fallbacks. English remains in system typography, and JSONL input, task IDs, and code retain their monospace formatting and directions. The `.alkatip-basma` helper provides RTL direction, embedded bidi handling, and a 2.2 line height. No font binary is bundled; unavailable fonts fall back without affecting offline scoring.
 
+The hero's animated inspection instrument is a **synthetic illustration**, not a model run or performance result. Its Uyghur pause/play button controls the decorative motion and section reveals. System reduced-motion settings take priority from the first paint; animation also pauses while the page is hidden or the instrument is outside the viewport. There are no animation timers or JavaScript frame loops, and user-submitted text is never animated. With JavaScript unavailable, the illustration and explanatory content remain visible as a static page.
+
 ## Verify and package
 
 ```bash
