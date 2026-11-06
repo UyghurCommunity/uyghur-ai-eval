@@ -1,0 +1,58 @@
+{
+  "name": "@uyghurcommunity/ai-eval",
+  "version": "0.1.0",
+  "description": "Offline evaluation tools and a transparent draft task set for Uyghur AI responses.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "ug-eval": "./bin/ug-eval.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./dataset": "./dataset/tasks.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "bin",
+    "dataset",
+    "examples",
+    "README.md",
+    "LICENSE",
+    "LICENSE-DATA",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "validate": "node bin/ug-eval.js validate",
+    "sample": "node bin/ug-eval.js sample",
+    "pack:check": "npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UyghurCommunity/uyghur-ai-eval.git"
+  },
+  "homepage": "https://uyghurcommunity.github.io/uyghur-ai-eval/",
+  "bugs": {
+    "url": "https://github.com/UyghurCommunity/uyghur-ai-eval/issues"
+  },
+  "keywords": [
+    "uyghur",
+    "evaluation",
+    "benchmark",
+    "rtl",
+    "unicode",
+    "ai",
+    "offline"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

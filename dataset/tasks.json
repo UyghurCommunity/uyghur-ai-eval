@@ -1,0 +1,470 @@
+{
+  "id": "uyghur-ai-eval-draft",
+  "version": "0.1.0",
+  "dataset_status": "draft",
+  "expert_reviewed": false,
+  "language": "ug-Arab",
+  "license": "CC0-1.0",
+  "created_at": "2026-11-06",
+  "provenance": {
+    "author": "UyghurCommunity",
+    "origin": "Original task prompts and draft references created for this project with AI assistance. No external dictionary or evaluation dataset was copied.",
+    "review_status": "Not reviewed by Uyghur language experts. Contributions should include independent review of prompts, keys, and rubrics.",
+    "scope": "Small, public software and language evaluation starter set; not a representative benchmark or a leaderboard."
+  },
+  "scoring": {
+    "automatic": "One point per exact or multiple-choice task. Missing automatic responses count as incorrect.",
+    "normalization": "Unicode NFC, normalized line endings, outer whitespace trimming; case-insensitive only when explicitly enabled per task. No Uyghur letters, hamza, marks, or joiners are removed.",
+    "human": "Human-review tasks are never included in the automatic accuracy denominator. Rubrics and references are drafts, not definitive translations."
+  },
+  "tasks": [
+    {
+      "id": "copy-01",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«ئۇيغۇر» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "ئۇيغۇر"
+      ]
+    },
+    {
+      "id": "copy-02",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«دوپپا» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "دوپپا"
+      ]
+    },
+    {
+      "id": "copy-03",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«ئەتلەس» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "ئەتلەس"
+      ]
+    },
+    {
+      "id": "copy-04",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«ھېكايە» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "ھېكايە"
+      ]
+    },
+    {
+      "id": "copy-05",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«ئۆرۈك» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "ئۆرۈك"
+      ]
+    },
+    {
+      "id": "copy-06",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«كۆڭۈل» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "كۆڭۈل"
+      ]
+    },
+    {
+      "id": "copy-07",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«ئۈمىد» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "ئۈمىد"
+      ]
+    },
+    {
+      "id": "copy-08",
+      "category": "script-fidelity",
+      "kind": "exact",
+      "prompt": "«گۈزەل» ئىچىدىكى تېكىستنى ئۆزگەرتمەي قايتۇرۇڭ. تىرناق ياكى چۈشەندۈرۈش قوشماڭ.",
+      "accepted": [
+        "گۈزەل"
+      ]
+    },
+    {
+      "id": "count-01",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«سالام» تېكىستىدە قانچە Unicode كود نۇقتىسى بار؟ پەقەت غەربچە رەقەم بىلەن جاۋاب بېرىڭ.",
+      "accepted": [
+        "5"
+      ]
+    },
+    {
+      "id": "count-02",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«دوپپا» تېكىستىدە قانچە Unicode كود نۇقتىسى بار؟ پەقەت غەربچە رەقەم بىلەن جاۋاب بېرىڭ.",
+      "accepted": [
+        "5"
+      ]
+    },
+    {
+      "id": "count-03",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«ئۇيغۇر» تېكىستىدە قانچە Unicode كود نۇقتىسى بار؟ پەقەت غەربچە رەقەم بىلەن جاۋاب بېرىڭ.",
+      "accepted": [
+        "6"
+      ]
+    },
+    {
+      "id": "count-04",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«ئەتلەس» تېكىستىدە قانچە Unicode كود نۇقتىسى بار؟ پەقەت غەربچە رەقەم بىلەن جاۋاب بېرىڭ.",
+      "accepted": [
+        "6"
+      ]
+    },
+    {
+      "id": "extract-01",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«بەت: دوپپا | تىل: ئۇيغۇرچە» تېكىستىدىن پەقەت بەت نامىنى قايتۇرۇڭ.",
+      "accepted": [
+        "دوپپا"
+      ]
+    },
+    {
+      "id": "extract-02",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«سالام، دۇنيا!» جۈملىسىدىكى پەشتىن بۇرۇنقى سۆزنى قايتۇرۇڭ. تىنىش بەلگىسى قوشماڭ.",
+      "accepted": [
+        "سالام"
+      ]
+    },
+    {
+      "id": "extract-03",
+      "category": "mixed-script",
+      "kind": "exact",
+      "prompt": "«نەشرى: v1.2.0» تېكىستىدىن پەقەت نەشر نومۇرىنى قايتۇرۇڭ.",
+      "accepted": [
+        "v1.2.0"
+      ]
+    },
+    {
+      "id": "extract-04",
+      "category": "mixed-script",
+      "kind": "exact",
+      "prompt": "«ئادرېس: https://example.org/ug?q=1» تېكىستىدىن پەقەت تور ئادرېسىنى قايتۇرۇڭ.",
+      "accepted": [
+        "https://example.org/ug?q=1"
+      ]
+    },
+    {
+      "id": "extract-05",
+      "category": "mixed-script",
+      "kind": "exact",
+      "prompt": "«ھۆججەت: README.md» تېكىستىدىن پەقەت ھۆججەت نامىنى قايتۇرۇڭ.",
+      "accepted": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "format-01",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«دوپپا» ۋە «ئەتلەس» سۆزلىرىنى | بەلگىسى بىلەن تۇتاشتۇرۇڭ. بوشلۇق قوشماڭ.",
+      "accepted": [
+        "دوپپا|ئەتلەس"
+      ]
+    },
+    {
+      "id": "format-02",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«ئالما|ئۆرۈك|ئانار» تېكىستىدىكى | بەلگىلىرىنى / بەلگىسىگە ئالماشتۇرۇڭ. بوشلۇق قوشماڭ.",
+      "accepted": [
+        "ئالما/ئۆرۈك/ئانار"
+      ]
+    },
+    {
+      "id": "format-03",
+      "category": "text-handling",
+      "kind": "exact",
+      "prompt": "«2,1,3» نومۇرلىرىنى كىچىكتىن چوڭغا تىزىڭ. ئوخشاش پەش شەكلىنى ساقلاڭ، بوشلۇق قوشماڭ.",
+      "accepted": [
+        "1,2,3"
+      ]
+    },
+    {
+      "id": "preserve-01",
+      "category": "unicode-fidelity",
+      "kind": "exact",
+      "prompt": "«ھ» ھەرىپىنى ئۆزگەرتمەي قايتۇرۇڭ؛ ئۇنى «ه» غا ئالماشتۇرماڭ.",
+      "accepted": [
+        "ھ"
+      ]
+    },
+    {
+      "id": "preserve-02",
+      "category": "unicode-fidelity",
+      "kind": "exact",
+      "prompt": "«ە» ھەرىپىنى ئۆزگەرتمەي قايتۇرۇڭ؛ ئۇنى «ه» غا ئالماشتۇرماڭ.",
+      "accepted": [
+        "ە"
+      ]
+    },
+    {
+      "id": "preserve-03",
+      "category": "unicode-fidelity",
+      "kind": "exact",
+      "prompt": "«ئ» ھەرىپىنى ئۆزگەرتمەي قايتۇرۇڭ.",
+      "accepted": [
+        "ئ"
+      ]
+    },
+    {
+      "id": "preserve-04",
+      "category": "unicode-fidelity",
+      "kind": "exact",
+      "prompt": "لاتىنچە «é» ھەرىپىنى قايتۇرۇڭ. باشقا تېكىست قوشماڭ.",
+      "accepted": [
+        "é"
+      ]
+    },
+    {
+      "id": "choice-01",
+      "category": "reading",
+      "kind": "multiple_choice",
+      "prompt": "«مەن كىتاب ئوقۇدۇم.» جۈملىسىدە نېمە ئوقۇلدى؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "كىتاب",
+        "B": "سۇ",
+        "C": "نان"
+      },
+      "accepted": [
+        "A"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-02",
+      "category": "reading",
+      "kind": "multiple_choice",
+      "prompt": "«بۈگۈن ھاۋا سوغۇق.» جۈملىسىدە ھاۋا قانداق؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "ئىسسىق",
+        "B": "سوغۇق",
+        "C": "ئۇزۇن"
+      },
+      "accepted": [
+        "B"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-03",
+      "category": "reading",
+      "kind": "multiple_choice",
+      "prompt": "«ئۈچ دانە ئالما بار.» جۈملىسىدە قانچە ئالما بار؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "1",
+        "B": "2",
+        "C": "3"
+      },
+      "accepted": [
+        "C"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-04",
+      "category": "reading",
+      "kind": "multiple_choice",
+      "prompt": "«ئەلى مەكتەپكە باردى.» جۈملىسىدە ئەلى نەگە باردى؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "مەكتەپكە",
+        "B": "بازارغا",
+        "C": "باغقا"
+      },
+      "accepted": [
+        "A"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-05",
+      "category": "script-awareness",
+      "kind": "multiple_choice",
+      "prompt": "ئادەتتە ئۇيغۇر ئەرەب يېزىقى قايسى يۆنىلىشتە يېزىلىدۇ؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "سولدىن ئوڭغا",
+        "B": "ئوڭدىن سولغا",
+        "C": "پەقەت يۇقىرىدىن تۆۋەنگە"
+      },
+      "accepted": [
+        "B"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-06",
+      "category": "script-awareness",
+      "kind": "multiple_choice",
+      "prompt": "قايسى تاللاش لاتىن يېزىقىدا؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "دوپپا",
+        "B": "ئەتلەس",
+        "C": "doppa"
+      },
+      "accepted": [
+        "C"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-07",
+      "category": "script-awareness",
+      "kind": "multiple_choice",
+      "prompt": "قايسى تاللاش تور ئادرېسى؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "https://example.org",
+        "B": "مەكتەپ",
+        "C": "كىتاب"
+      },
+      "accepted": [
+        "A"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "choice-08",
+      "category": "reading",
+      "kind": "multiple_choice",
+      "prompt": "«ئۇ سۇ ئىچتى.» جۈملىسىدە نېمە ئىچىلدى؟ پەقەت A، B ياكى C دىن بىرىنى قايتۇرۇڭ.",
+      "choices": {
+        "A": "چاي",
+        "B": "سۇ",
+        "C": "سۈت"
+      },
+      "accepted": [
+        "B"
+      ],
+      "normalization": {
+        "caseInsensitive": true
+      }
+    },
+    {
+      "id": "translate-01",
+      "category": "translation",
+      "kind": "human",
+      "prompt": "Translate into Uyghur: “Welcome to our community.”",
+      "reference_answer": "جامائىتىمىزگە خۇش كەلدىڭىز.",
+      "rubric": [
+        "مەنىنىڭ توغرا ۋە تولۇق يەتكۈزۈلۈشىنى تەكشۈرۈڭ.",
+        "ئۇيغۇرچە گرامماتىكا ۋە ئىملاسىنى تەكشۈرۈڭ.",
+        "تەبىئىي ۋە راۋان ئىپادىلەنگەنلىكىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "translate-02",
+      "category": "translation",
+      "kind": "human",
+      "prompt": "Translate into Uyghur: “Please save your changes before closing the page.”",
+      "reference_answer": "بەتنى تاقاشتىن بۇرۇن ئۆزگەرتىشلىرىڭىزنى ساقلاڭ.",
+      "rubric": [
+        "مەنىنىڭ توغرا ۋە تولۇق يەتكۈزۈلۈشىنى تەكشۈرۈڭ.",
+        "ئۇيغۇرچە گرامماتىكا ۋە ئىملاسىنى تەكشۈرۈڭ.",
+        "تەبىئىي ۋە راۋان ئىپادىلەنگەنلىكىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "translate-03",
+      "category": "translation",
+      "kind": "human",
+      "prompt": "Translate into English: «بۇ تۈر ئوچۇق مەنبەلىك بولۇپ، ھەممە ئادەم تۆھپە قوشالايدۇ.»",
+      "reference_answer": "This project is open source, and everyone can contribute.",
+      "rubric": [
+        "مەنىنىڭ توغرا ۋە تولۇق يەتكۈزۈلۈشىنى تەكشۈرۈڭ.",
+        "ئۇيغۇرچە گرامماتىكا ۋە ئىملاسىنى تەكشۈرۈڭ.",
+        "تەبىئىي ۋە راۋان ئىپادىلەنگەنلىكىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "translate-04",
+      "category": "translation",
+      "kind": "human",
+      "prompt": "Translate into English: «تور ئۇلىنىشى يوق. كېيىن قايتا سىناڭ.»",
+      "reference_answer": "There is no internet connection. Please try again later.",
+      "rubric": [
+        "مەنىنىڭ توغرا ۋە تولۇق يەتكۈزۈلۈشىنى تەكشۈرۈڭ.",
+        "ئۇيغۇرچە گرامماتىكا ۋە ئىملاسىنى تەكشۈرۈڭ.",
+        "تەبىئىي ۋە راۋان ئىپادىلەنگەنلىكىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "write-01",
+      "category": "writing",
+      "kind": "human",
+      "prompt": "يېڭى تۆھپە قوشقۇچىغا ئۇيغۇرچە ئىككى جۈملە خۇش كەلدىڭىز ئۇچۇرى يېزىڭ.",
+      "reference_answer": "خۇش كەلدىڭىز! تۈرىمىزگە قوشۇلۇپ، بىلىمىڭىز ۋە ئويلىرىڭىزنى ئورتاقلاشقانلىقىڭىزغا رەھمەت.",
+      "rubric": [
+        "ئىككى جۈملە يېزىلغانلىقىنى تەكشۈرۈڭ.",
+        "خۇش كەلدىڭىز دېگەن مەنىنىڭ ئىپادىلەنگەنلىكىنى تەكشۈرۈڭ.",
+        "تىلنىڭ سىلىق، تەبىئىي ۋە ھۆرمەتلىك ئىكەنلىكىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "write-02",
+      "category": "writing",
+      "kind": "human",
+      "prompt": "«ھەرىكەتنى ئازايتىش» تەڭشىكىنىڭ پايدىسىنى ئۇيغۇرچە بىر قىسقا جۈملە بىلەن چۈشەندۈرۈڭ.",
+      "reference_answer": "بۇ تەڭشەك ئېكراندىكى ھەرىكەتلەرنى ئازايتىپ، مەزمۇننى خاتىرجەم ئوقۇشقا ياردەم بېرىدۇ.",
+      "rubric": [
+        "ھەرىكەتنىڭ ئازايتىلىدىغانلىقىنى توغرا چۈشەندۈرۈڭ.",
+        "قىسقا ۋە چۈشىنىشلىك ئۇيغۇرچە ئىپادە ئىشلىتىلگەنلىكىنى تەكشۈرۈڭ.",
+        "ئاساسسىز داۋالاش ياكى سالامەتلىك ۋەدىسى قوشۇلمىغانلىقىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "summarize-01",
+      "category": "summarization",
+      "kind": "human",
+      "prompt": "تۆۋەندىكى تېكىستنى ئۇيغۇرچە بىر جۈملە بىلەن خۇلاسىلەڭ: «بىز يېڭى كۇنۇپكا تاختىسى ياسىدۇق. ئۇ ئۇيغۇرچە خەت يېزىشنى قوللايدۇ. تور ئۇلىنىشى بولمىسىمۇ ئىشلەيدۇ.»",
+      "reference_answer": "يېڭى كۇنۇپكا تاختىسى تور ئۇلىنىشى بولمىسىمۇ ئۇيغۇرچە يېزىشنى قوللايدۇ.",
+      "rubric": [
+        "ئۇيغۇرچە يېزىش ۋە تورسىز ئىشلىتىشتىن ئىبارەت ئىككى ئاساسىي مەزمۇن ساقلانغانلىقىنى تەكشۈرۈڭ.",
+        "بىر جۈملە ئىچىدە ئىپادىلەنگەنلىكىنى تەكشۈرۈڭ.",
+        "ئەسلى تېكىستتە يوق ئۇچۇر قوشۇلمىغانلىقىنى تەكشۈرۈڭ."
+      ]
+    },
+    {
+      "id": "rewrite-01",
+      "category": "writing",
+      "kind": "human",
+      "prompt": "«كودۇڭىز خاتا، قايتا يېزىڭ.» دېگەن ئۇچۇرنى مەنىسىنى ساقلىغان ھالدا تېخىمۇ ھۆرمەتلىك ئۇيغۇرچە قايتا يېزىڭ.",
+      "reference_answer": "كودىڭىزدا تۈزىتىشكە تېگىشلىك مەسىلە بار؛ تەكشۈرۈپ، قايتا تەھرىرلىسىڭىز بولامدۇ؟",
+      "rubric": [
+        "تۈزىتىش تەلەپ قىلىنغان مەنىنىڭ ساقلانغانلىقىنى تەكشۈرۈڭ.",
+        "ھاكاۋۇر ياكى كەمسىتىدىغان ئىپادە يوقلۇقىنى تەكشۈرۈڭ.",
+        "ئۇيغۇرچە ئىپادىنىڭ تەبىئىيلىكىنى تەكشۈرۈڭ."
+      ]
+    }
+  ]
+}

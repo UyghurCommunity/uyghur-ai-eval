@@ -1,0 +1,40 @@
+{"id":"copy-01","response":"ئۇيغۇر","source":"synthetic-fixture"}
+{"id":"copy-02","response":"[deliberately incorrect fixture]","source":"synthetic-fixture"}
+{"id":"copy-03","response":"ئەتلەس","source":"synthetic-fixture"}
+{"id":"copy-04","response":"ھېكايە","source":"synthetic-fixture"}
+{"id":"copy-05","response":"ئۆرۈك","source":"synthetic-fixture"}
+{"id":"copy-06","response":"[deliberately incorrect fixture]","source":"synthetic-fixture"}
+{"id":"copy-07","response":"ئۈمىد","source":"synthetic-fixture"}
+{"id":"copy-08","response":"گۈزەل","source":"synthetic-fixture"}
+{"id":"count-01","response":"5","source":"synthetic-fixture"}
+{"id":"count-02","response":"[deliberately incorrect fixture]","source":"synthetic-fixture"}
+{"id":"count-03","response":"6","source":"synthetic-fixture"}
+{"id":"count-04","response":"6","source":"synthetic-fixture"}
+{"id":"extract-01","response":"دوپپا","source":"synthetic-fixture"}
+{"id":"extract-02","response":"[deliberately incorrect fixture]","source":"synthetic-fixture"}
+{"id":"extract-03","response":"v1.2.0","source":"synthetic-fixture"}
+{"id":"extract-04","response":"https://example.org/ug?q=1","source":"synthetic-fixture"}
+{"id":"extract-05","response":"README.md","source":"synthetic-fixture"}
+{"id":"format-01","response":"[deliberately incorrect fixture]","source":"synthetic-fixture"}
+{"id":"format-02","response":"ئالما/ئۆرۈك/ئانار","source":"synthetic-fixture"}
+{"id":"format-03","response":"1,2,3","source":"synthetic-fixture"}
+{"id":"preserve-01","response":"ھ","source":"synthetic-fixture"}
+{"id":"preserve-02","response":"[deliberately incorrect fixture]","source":"synthetic-fixture"}
+{"id":"preserve-03","response":"ئ","source":"synthetic-fixture"}
+{"id":"preserve-04","response":"é","source":"synthetic-fixture"}
+{"id":"choice-01","response":"A","source":"synthetic-fixture"}
+{"id":"choice-02","response":"A","source":"synthetic-fixture"}
+{"id":"choice-03","response":"C","source":"synthetic-fixture"}
+{"id":"choice-04","response":"A","source":"synthetic-fixture"}
+{"id":"choice-05","response":"B","source":"synthetic-fixture"}
+{"id":"choice-06","response":"A","source":"synthetic-fixture"}
+{"id":"choice-07","response":"A","source":"synthetic-fixture"}
+{"id":"choice-08","response":"B","source":"synthetic-fixture"}
+{"id":"translate-01","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"translate-02","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"translate-03","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"translate-04","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"write-01","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"write-02","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"summarize-01","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}
+{"id":"rewrite-01","response":"بۇ سىناق ئۈچۈن ياسالغان ئۈلگە جاۋاب.","source":"synthetic-fixture"}

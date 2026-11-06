@@ -1,0 +1,14 @@
+CC0 1.0 Universal — original task dataset and synthetic examples
+
+To the extent possible under law, UyghurCommunity has waived all copyright
+and related or neighboring rights to the original material in dataset/tasks.json
+and examples/synthetic-predictions.jsonl under the CC0 1.0 Universal public
+domain dedication.
+
+The full legal instrument is available at:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+This dedication applies to original task prompts, reference answers, rubrics,
+and synthetic example responses in this project. It does not apply to third-party
+model responses that users evaluate. The task set is a draft, created with AI
+assistance, and has not been reviewed by Uyghur language experts.
