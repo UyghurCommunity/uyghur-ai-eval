@@ -5,13 +5,17 @@ const labels = { correct: 'توغرا', incorrect: 'خاتا', missing: 'كەم 
 const categoryLabels = { 'script-fidelity': 'ھەرپنى ساقلاش', 'text-handling': 'تېكىست بىر تەرەپ قىلىش', 'mixed-script': 'ئارىلاش يېزىق', 'unicode-fidelity': 'Unicode', reading: 'ئوقۇپ چۈشىنىش', 'script-awareness': 'يېزىقنى تونۇش', translation: 'تەرجىمە', writing: 'يېزىش', summarization: 'خۇلاسىلەش' };
 function node(tag, text, className) {
   const element = document.createElement(tag);
-  if (text !== undefined) element.textContent = text;
+  if (text !== undefined) {
+    element.textContent = text;
+    element.lang = /[\u0600-\u06ff]/u.test(String(text)) ? 'ug' : 'en';
+  }
   if (className) element.className = className;
   return element;
 }
 function showError(error) {
   $('error-message').hidden = false;
   $('error-message').textContent = [error.message, ...(error.issues || [])].join('\n');
+  $('error-message').lang = /[\u0600-\u06ff]/u.test($('error-message').textContent) ? 'ug' : 'en';
   $('status-message').textContent = 'باھالىغىلى بولمىدى. خاتالىقلارنى تۈزىتىپ قايتا سىناڭ.';
 }
 function download(name, content, type) {
@@ -52,6 +56,7 @@ function renderReport() {
   $('report').hidden = false;
   $('task-section').hidden = false;
   $('report-label').textContent = report.submission.label;
+  $('report-label').lang = /[\u0600-\u06ff]/u.test(report.submission.label) ? 'ug' : 'en';
   $('report-source').textContent = report.submission.synthetic ? 'ياسالما ئۈلگە / SYNTHETIC' : 'كىرگۈزۈلگەن جاۋابلار';
   $('report-source').classList.toggle('synthetic', report.submission.synthetic);
   $('automatic-score').textContent = report.automatic.accuracy === null ? '—' : `${(report.automatic.accuracy * 100).toFixed(1)}%`;
@@ -90,6 +95,7 @@ $('load-sample').addEventListener('click', () => {
   if (!dataset) return;
   $('prediction-input').value = createSyntheticPredictions(dataset).map((row) => JSON.stringify(row)).join('\n');
   $('submission-label').value = 'Synthetic software demonstration';
+  $('submission-label').lang = 'en';
   $('error-message').hidden = true;
   $('status-message').textContent = 'ياسالما ئۈلگە يۈكلەندى. بۇ ھەقىقىي مودېل جاۋابى ئەمەس.';
 });
@@ -100,10 +106,12 @@ $('prediction-file').addEventListener('change', async (event) => {
   try {
     $('prediction-input').value = await file.text();
     $('submission-label').value = file.name.slice(0, 200);
+    $('submission-label').lang = /[\u0600-\u06ff]/u.test(file.name) ? 'ug' : 'en';
     $('error-message').hidden = true;
     $('status-message').textContent = 'ھۆججەت يەرلىك يۈكلەندى؛ ھېچقانداق مۇلازىمېتىرغا ئەۋەتىلمىدى.';
   } catch (error) { showError(error); }
 });
+$('submission-label').addEventListener('input', (event) => { event.target.lang = /[\u0600-\u06ff]/u.test(event.target.value) ? 'ug' : 'en'; });
 $('result-filter').addEventListener('change', renderTasks);
 $('download-json').addEventListener('click', () => { if (report) download('uyghur-eval-report.json', JSON.stringify(report, null, 2) + '\n', 'application/json;charset=utf-8'); });
 $('download-markdown').addEventListener('click', () => { if (report) download('uyghur-eval-report.md', formatMarkdown(report), 'text/markdown;charset=utf-8'); });

@@ -1,3 +1,13 @@
+@font-face {
+  font-family:"ALKATIP Basma";
+  src:url("https://db.onlinewebfonts.com/t/3c16518f40da2fc2901f37666c0556a7.woff2") format("woff2"),
+      url("https://db.onlinewebfonts.com/t/3c16518f40da2fc2901f37666c0556a7.woff") format("woff"),
+      url("https://db.onlinewebfonts.com/t/3c16518f40da2fc2901f37666c0556a7.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
 :root {
   color-scheme:light;
   --paper:#f5f2e9;
@@ -8,8 +18,10 @@
   --gold:#b17b32;
   --teal:#164b45;
   --red:#9d443e;
-  --sans:Tahoma,Arial,sans-serif;
-  --mono:ui-monospace,SFMono-Regular,Consolas,monospace;
+  --uyghur:"ALKATIP Basma",Tahoma,Arial,sans-serif;
+  --latin:Tahoma,Arial,sans-serif;
+  --sans:var(--uyghur);
+  --mono:ui-monospace,SFMono-Regular,Consolas,"ALKATIP Basma",monospace;
 }
 
 * {
@@ -1058,4 +1070,38 @@ details[open] summary:after {
   .button:hover {
     transform:none;
   }
+}
+
+/* Uyghur typography is independent of the interface's current language. */
+.alkatip-basma {
+  font-family: "ALKATIP Basma", serif;
+  direction:rtl;
+  unicode-bidi:embed;
+  line-height:2.2;
+}
+
+[lang="ug"],[lang="ug-Arab"] {
+  font-family:var(--uyghur);
+}
+
+[lang="en"],[lang="ug-Latn"] {
+  font-family:var(--latin);
+}
+
+body {
+  line-height:2.2;
+}
+
+.task pre:lang(ug),.task-prompt:lang(ug),.reference:lang(ug),.report-label:lang(ug) {
+  font-family:var(--uyghur);
+  line-height:2.2;
+}
+
+.task pre:lang(en),.task-prompt:lang(en),.reference:lang(en) {
+  font-family:var(--latin);
+}
+
+/* Serialized fixtures and task identifiers keep their original code layout. */
+#prediction-input,.task-id,bdi,code,.cli-section pre {
+  font-family:var(--mono);
 }

@@ -135,6 +135,8 @@ Open <http://localhost:4173/>. The page fetches the bundled dataset and scores p
 
 Serve over HTTP rather than opening `index.html` as a `file://` URL, since browser module and dataset loading require an HTTP origin.
 
+Uyghur interface text and Uyghur answers use **ALKATIP Basma**, loaded from external WOFF2/WOFF/TTF URLs at `db.onlinewebfonts.com`, with system font fallbacks. English remains in system typography, and JSONL input, task IDs, and code retain their monospace formatting and directions. The `.alkatip-basma` helper provides RTL direction, embedded bidi handling, and a 2.2 line height. No font binary is bundled; unavailable fonts fall back without affecting offline scoring.
+
 ## Verify and package
 
 ```bash
